@@ -1,4 +1,4 @@
-# To-Do List - Backend
+# To-Do List - Frontend
 
 Ce projet est le frontend du test technique pour Ikomobi, le sujet était une application de todo list.  
 
