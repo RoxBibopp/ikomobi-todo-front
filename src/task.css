@@ -1,0 +1,153 @@
+.taskContainer {
+  width: 99vw;
+  overflow-x: hidden;
+
+  .taskHeader {
+    background-color: #e4dcfc;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    h2 {
+      margin: 0 0 10px 0;
+    }
+    .date {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .logout {
+      color: #a194c5;
+    }
+  }
+
+  .tasksTab {
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      border-radius: 27px;
+      background: #f0ecfa;
+      box-shadow:  7px 7px 11px #d2cae6,
+                  -7px -7px 11px #fff6ff;
+      padding: 20px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color:#736f7e;
+      font-weight: 300;
+      transition: .5s;
+    }
+
+    .active {
+      font-weight: 600;
+      background: linear-gradient(145deg, #e2ddf0, #f9f0ff);
+      box-shadow:  7px 7px 11px #d2cae6,
+                   -7px -7px 11px #fff6ff;
+    }
+  }
+
+  .tasksList {
+    padding: 10%;
+
+    .classComponent {
+      border-radius: 10px;
+      background: #f8f6ff;
+      box-shadow: 7px 7px 22px #b6b3be, -7px -7px 22px #ffffff;
+      padding: 25px 20px;
+      margin-bottom: 25px;
+
+      .taskTitle {
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+
+      .taskDesc {
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+
+      select {
+        border: 1px solid rgb(235, 235, 235);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      .deleteButton {
+        margin-top: 15px;
+        color: red;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+
+      .taskStatus {
+        font-style: italic;
+        font-size: 14px;
+      }
+    }
+  }
+  .addTaskCtn {
+    margin: 0 10%;
+    margin-bottom: 50px;
+    input {
+      width: 100%;
+      height: 5vh;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border: none;
+      border-radius: 14px;
+      background: #f4f0ff;
+      box-shadow: inset 5px 5px 5px #b9b6c2,
+                  inset -5px -5px 5px #ffffff;
+    }
+    textarea {
+      height: 10vh;
+      width: 100%;
+      margin-top: 15px;
+      border: none;
+      border-radius: 14px;
+      background: #f4f0ff;
+      box-shadow: inset 5px 5px 5px #b9b6c2,
+                  inset -5px -5px 5px #ffffff;
+    }
+
+    .addButton {
+      border-radius: 27px;
+      background: #f0ecfa;
+      box-shadow:  7px 7px 11px #d2cae6,
+                  -7px -7px 11px #fff6ff;
+      padding: 10px 20px;
+      display: flex;
+      color:#c2b6e6;
+
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+
+  .inviteCtn {
+    margin: 0 10%;
+  }
+}
+
+.filtersCtn {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding: 0px;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.filtersCtn label {
+  font-size: 14px;
+  color: #736f7e;
+}
+

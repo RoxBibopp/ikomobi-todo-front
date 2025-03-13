@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.inputText {
+  border-radius: 13px;
+  border-style: none;
+  height: 40px;
+  width: 100%;
+  border-radius: 14px;
+  background: #f4f0ff;
+  box-shadow: inset 5px 5px 5px #b9b6c2,
+              inset -5px -5px 5px #ffffff;
+  margin-bottom: 30px;
+}
+input:focus {
+  border: 1px solid red !important;
+}
+input::placeholder {
+  color: #c1bdcf;
+  font-family: Montserrat;
+}
+body {
+  background: #f4f0ff;
+  font-family: 'Montserrat';
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 99vw;
+}
+
+.homeContainer {
+  padding: 0 50px;
+
+  .logoContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0 20vh 0px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 100px;
+  }
+
+  .connect {
+    margin-top: 40px;
+    background: #f4f0ff;
+    box-shadow:  7px 7px 14px #d4d1de,
+             -7px -7px 14px #ffffff;
+    border-style: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    color:#c2b6e6;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+  }
+  input {
+    border-radius: 13px;
+    border-style: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 14px;
+    background: #f4f0ff;
+    box-shadow: inset 5px 5px 5px #b9b6c2,
+                inset -5px -5px 5px #ffffff;
+    margin-bottom: 30px;
+  }
+  input:focus {
+    border: 1px solid red !important;
+  }
+  input::placeholder {
+    color: #c1bdcf;
+    font-family: Montserrat;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+}
+
+.inputComponent {
+  margin: 20px 0;
+}
+
+.button {
+  border-radius: 27px;
+  background: #f0ecfa;
+  box-shadow:  7px 7px 11px #d2cae6,
+              -7px -7px 11px #fff6ff;
+  padding: 10px 20px;
+  display: flex;
+  color:#c2b6e6;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
