@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Plateforme Collaborative - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est le frontend du test technique pour Ikomobi, le sujet était une application de todo list.  
 
-## Available Scripts
 
-In the project directory, you can run:
+> **IMPORTANT :**  
+> <span style="color: red;">Ce projet a été pensé pour le mobile uniquement. Pour un rendu optimal sur ordinateur, activez le mode mobile dans la console de votre navigateur.</span>
 
-### `npm start`
+## Table des matières
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Technologies utilisées](#technologies-utilisées)
+- [Installation](#installation)
+- [Lancer l'application](#lancer-lapplication)
+- [Structure du projet](#structure-du-projet)
+- [Pages principales](#pages-principales)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies utilisées
 
-### `npm test`
+- **React** – Framework front-end utilisé.
+- **fetch** – Pour la communication avec le backend.
+- **CSS / Sass** – Pour le style.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prérequis
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js
+- npm ou Yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Cloner le dépôt
 
-### `npm run eject`
+Clonez le dépôt sur votre machine locale :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/RoxBibopp/ikomobi-todo-front.git
+cd ikomobi-todo-front
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installer les dépendances
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+# ou
+yarn install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Configuration
 
-## Learn More
+Vérifiez le fichier `api.js` afin de s'assurer que l'url de l'api correspond à celui de votre machine (sinon, elle pointera par défaut sur `http://localhost:5000`).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Lancer l'application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Pour démarrer l'application :
 
-### Code Splitting
+```bash
+npm start
+# ou
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+L'application sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+## Structure du projet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **src/** – Contient l'ensemble du code source.
+  - **components/** – Composants réutilisables.
+  - **pages/** – Pages principales.
+  - **services/** – Fonctions de communication avec l'API.
+  - **App.js** – Composant principal.
+  - **index.js** – Point d'entrée de l'application.
+- **public/** – Fichiers statiques.
 
-### Making a Progressive Web App
+## Pages principales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Authentification
 
-### Advanced Configuration
+- **/login** – Page de connexion.
+- **/register** – Page d'inscription.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Gestion des tâches
 
-### Deployment
+- **/tasks** – Page affichant la liste des tâches.  
+  Cette page comporte deux onglets :  
+  - **Mes tâches** : Affiche vos tâches personnelles.  
+  - **Tâches des autres** : Affiche les tâches collaboratives.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Invitations
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Composant Invitations** – Permet d'envoyer des invitations afin de partager votre liste de tâches avec d'autres utilisateurs.
