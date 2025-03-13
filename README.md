@@ -1,4 +1,4 @@
-# Plateforme Collaborative - Frontend
+# To-Do List - Backend
 
 Ce projet est le frontend du test technique pour Ikomobi, le sujet était une application de todo list.  
 
